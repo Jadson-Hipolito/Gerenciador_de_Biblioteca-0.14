@@ -1,0 +1,6 @@
+{
+    "C_Cpp.default.compilerPath": "C:\\caminho\\para\\seu\\compilador\\cruzado\\gcc.exe",
+    "files.associations": {
+        "locale.h": "c"
+    }
+}
