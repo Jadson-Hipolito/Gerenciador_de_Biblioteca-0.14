@@ -12,6 +12,7 @@ typedef struct funcio{
     int telefone;
     char endereco[max_nome];
     char cpf[max_cpf];
+    char cargo[max_nome]
     int id;
     int ativ;
 } funcionario;

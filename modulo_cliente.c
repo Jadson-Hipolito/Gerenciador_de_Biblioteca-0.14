@@ -87,7 +87,9 @@ void listar_clientes() {
     printf("%s", linha);
   }
 
-  fclose(arquivo); // Fecha o arquivo
+  fclose(arquivo);
+
+  
 }
 
 void editar_cliente() {

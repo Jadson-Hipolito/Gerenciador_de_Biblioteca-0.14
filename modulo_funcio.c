@@ -14,7 +14,7 @@ void menu_funcio(void) {
   printf("=====================================\n\n");
   printf("1 - Cadastrar\n");
   printf("2 - Listar Funcionários\n");
-  printf("3 - Editar Registro de Funcionário\n");
+  printf("3 - Buscar/Editar Registro de Funcionário\n");
   printf("0 - Retornar para o menu principal\n");
   printf("=====================================\n");
   printf("Escolha uma opção: ");
@@ -58,6 +58,9 @@ void cadastrar_funcionario(funcionario *funcionarios, int *num_funcionarios) {
       printf("Digite o cpf do funcionario: ");
       scanf("%s", funcionarios[*num_funcionarios].cpf);
 
+      printf("Digite o cargo do funcionario: ");
+      scanf("%s", funcionarios[*num_funcionarios].cargo);
+
       funcionarios[*num_funcionarios].ativ = 1;
 
       funcionarios[*num_funcionarios].id = *num_funcionarios;
@@ -83,6 +86,10 @@ void listar_funcionarios(const funcionario *funcionarios, int *num_funcionarios)
   for (int i = 0; i < *num_funcionarios; i++) {
     printf("Nome: %s\nTelefone: %d\nCPF: %s\n\n",
      funcionarios[i].nome, funcionarios[i].telefone, funcionarios[i].cpf);
+  char alternative;
+  printf('Digite 1 para filtrar por profissão ou qualquer outro para voltar ao menu');
+  scanf("%d", &mudar);
+  scanf
   }}
 
 void editar_funcionario() {
